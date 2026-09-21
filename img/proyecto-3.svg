@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Captura de ejemplo del proyecto 3">
+  <rect width="640" height="360" fill="#7a3fd1"/>
+  <rect x="40" y="40" width="560" height="280" rx="16" fill="#f6f8fb"/>
+  <rect x="40" y="40" width="560" height="44" rx="16" fill="#5b2aa6"/>
+  <rect x="40" y="68" width="560" height="16" fill="#5b2aa6"/>
+  <circle cx="68" cy="62" r="7" fill="#f6f8fb"/><circle cx="92" cy="62" r="7" fill="#f6f8fb"/><circle cx="116" cy="62" r="7" fill="#f6f8fb"/>
+  <rect x="68" y="112" width="200" height="20" rx="6" fill="#7a3fd1"/>
+  <rect x="68" y="148" width="330" height="12" rx="6" fill="#d5dbe8"/>
+  <rect x="68" y="172" width="290" height="12" rx="6" fill="#d5dbe8"/>
+  <rect x="68" y="220" width="150" height="70" rx="10" fill="#5b2aa6" opacity=".85"/>
+  <rect x="234" y="220" width="150" height="70" rx="10" fill="#7a3fd1" opacity=".85"/>
+  <rect x="400" y="220" width="170" height="70" rx="10" fill="#f2b705"/>
+</svg>
