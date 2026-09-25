@@ -217,7 +217,7 @@
     sections.forEach((section) => observer.observe(section));
   }
 
-  /* ---------- 7. Botón volver arriba ---------- */
+ 
   const toTop = $("#to-top");
 
   window.addEventListener(
