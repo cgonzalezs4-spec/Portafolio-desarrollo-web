@@ -7,12 +7,10 @@
   <meta name="description" content="Portafolio de Cristhian Gonzalez, estudiante de desarrollo web: proyectos, habilidades y contacto.">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 
-  <!-- Fuentes (con alternativas locales si no cargan) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;700&display=swap">
 
-  <!-- Estilos: tokens -> base -> componentes -> secciones -> responsive -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
@@ -24,7 +22,6 @@
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <!-- ===================== NAVEGACIÓN ===================== -->
   <header class="site-header">
     <nav class="nav container" aria-label="Principal">
       <a class="nav__brand" href="#inicio">TN<span aria-hidden="true">/</span>dev</a>
@@ -53,7 +50,6 @@
 
   <main id="contenido">
 
-    <!-- ===================== INICIO ===================== -->
     <section class="hero" id="inicio" aria-labelledby="titulo-inicio">
       <div class="container hero__grid">
         <div>
@@ -86,7 +82,6 @@
       </div>
     </section>
 
-    <!-- ===================== SOBRE MÍ ===================== -->
     <section class="section section--alt" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
       <div class="container">
         <header class="section__intro">
@@ -137,7 +132,6 @@
       </div>
     </section>
 
-    <!-- ===================== SKILLS ===================== -->
     <section class="section" id="skills" aria-labelledby="titulo-skills">
       <div class="container">
         <header class="section__intro">
@@ -234,7 +228,6 @@
       </div>
     </section>
 
-    <!-- ===================== PROYECTOS ===================== -->
     <section class="section section--alt" id="proyectos" aria-labelledby="titulo-proyectos">
       <div class="container">
         <header class="section__intro">
@@ -318,7 +311,6 @@
       </div>
     </section>
 
-    <!-- ===================== DESIGN SYSTEM ===================== -->
     <section class="section" id="design-system" aria-labelledby="titulo-ds">
       <div class="container">
         <header class="section__intro">
@@ -326,7 +318,6 @@
           <p>Las decisiones visuales de este sitio, en un solo lugar. Todo lo que ves aquí usa los mismos tokens y clases que el resto del portafolio; cambia el tema para ver cómo responden.</p>
         </header>
 
-        <!-- Colores -->
         <h3 class="subheading">Colores</h3>
         <ul class="swatches" id="swatches">
           <li class="swatch swatch--primary"><div class="swatch__color"></div><div class="swatch__info"><strong>Primary</strong><code data-token="--color-primary"></code></div></li>
@@ -342,7 +333,6 @@
           <li class="swatch swatch--success"><div class="swatch__color"></div><div class="swatch__info"><strong>Success</strong><code data-token="--color-success"></code></div></li>
         </ul>
 
-        <!-- Tipografía -->
         <h3 class="subheading">Tipografía</h3>
         <div class="ds-panel type-sample">
           <p class="text-muted">Títulos: Bricolage Grotesque · Texto: IBM Plex Sans · Código: IBM Plex Mono</p>
@@ -354,7 +344,6 @@
           <p><a href="#design-system">Enlace de ejemplo</a></p>
         </div>
 
-        <!-- Espaciado -->
         <h3 class="subheading">Espaciado</h3>
         <div class="ds-panel">
           <ul class="spacing-scale">
@@ -367,7 +356,6 @@
           </ul>
         </div>
 
-        <!-- Componentes -->
         <h3 class="subheading">Componentes</h3>
         <div class="ds-demo-grid">
 
@@ -472,7 +460,6 @@
     </div>
   </footer>
 
-  <!-- Modal de detalle de proyecto -->
   <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
     <div class="modal__inner">
       <header class="modal__header">
