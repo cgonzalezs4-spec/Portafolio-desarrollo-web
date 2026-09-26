@@ -247,7 +247,7 @@
   color: var(--color-on-primary);
 }
 
-.skill {
+.habilidad {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: var(--space-sm) var(--space-md);
@@ -258,7 +258,7 @@
   border-radius: var(--radius-md);
 }
 
-.skill__icon {
+.habilidad__icon {
   display: grid;
   place-items: center;
   width: 2.75rem;
@@ -271,12 +271,12 @@
   font-weight: var(--weight-bold);
 }
 
-.skill__name {
+.habilidad__name {
   margin: 0;
   font-size: var(--text-md);
 }
 
-.skill__level {
+.habilidad__level {
   grid-column: 1 / -1;
   display: flex;
   align-items: center;
@@ -285,7 +285,7 @@
   font-size: var(--text-xs);
 }
 
-.skill__bar {
+.habilidad__bar {
   flex: 1;
   height: 0.5rem;
   border-radius: var(--radius-pill);
@@ -293,7 +293,7 @@
   overflow: hidden;
 }
 
-.skill__bar::after {
+.habilidad__bar::after {
   content: "";
   display: block;
   height: 100%;
@@ -302,11 +302,11 @@
   background: var(--color-secondary);
 }
 
-.skill__bar--1 { --level: 33%; }
-.skill__bar--2 { --level: 66%; }
-.skill__bar--3 { --level: 90%; }
+.habilidad__bar--1 { --level: 33%; }
+.habilidad__bar--2 { --level: 66%; }
+.habilidad__bar--3 { --level: 90%; }
 
-.skill__desc {
+.habilidad__desc {
   grid-column: 1 / -1;
   margin: 0;
   color: var(--color-text-muted);
