@@ -1,31 +1,18 @@
-/* ==========================================================
-   main.js — Comportamiento del portafolio
-   1. Tema claro/oscuro (localStorage)
-   2. Menú responsive
-   3. Filtro de proyectos
-   4. Modal de proyecto
-   5. Validación del formulario
-   6. Navegación activa según scroll
-   7. Botón volver arriba
-   8. Valores de color en el Design System
-   ========================================================== */
 (function () {
   "use strict";
 
   const $ = (selector, scope = document) => scope.querySelector(selector);
   const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
 
-  /* ---------- Utilidad: localStorage seguro ---------- */
   const storage = {
     get(key) {
       try { return localStorage.getItem(key); } catch { return null; }
     },
     set(key, value) {
-      try { localStorage.setItem(key, value); } catch { /* modo privado */ }
+      try { localStorage.setItem(key, value); } catch {}
     },
   };
 
-  /* ---------- 1. Tema claro/oscuro ---------- */
   const themeToggle = $("#theme-toggle");
   const themeIcon = $("#theme-icon");
 
@@ -48,7 +35,6 @@
     storage.set("theme", next);
   });
 
-  /* ---------- 2. Menú responsive ---------- */
   const menuToggle = $("#menu-toggle");
   const menu = $("#menu");
 
@@ -73,7 +59,6 @@
     }
   });
 
-  /* ---------- 3. Filtro de proyectos ---------- */
   const filterButtons = $$(".chip[data-filter]");
   const projectCards = $$("#projects-grid .card");
   const filterStatus = $("#filter-status");
@@ -95,7 +80,6 @@
     });
   });
 
-  /* ---------- 4. Modal de proyecto ---------- */
   const modal = $("#project-modal");
   const modalTitle = $("#modal-title");
   const modalProblem = $("#modal-problem");
@@ -134,7 +118,6 @@
 
   $("#modal-close").addEventListener("click", () => modal.close());
 
-  // Cerrar al hacer clic fuera del contenido
   modal.addEventListener("click", (event) => {
     if (event.target === modal) modal.close();
   });
@@ -143,7 +126,6 @@
     if (lastTrigger) lastTrigger.focus();
   });
 
-  /* ---------- 5. Validación del formulario ---------- */
   const form = $("#contact-form");
   const formStatus = $("#form-status");
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -185,15 +167,11 @@
       return;
     }
 
-    /* Este sitio es estático: aquí no se envía a ningún servidor.
-       Para recibir mensajes reales conecta un servicio como Formspree
-       (ver README.md). */
     form.reset();
     formStatus.textContent = "Mensaje validado. Gracias por escribir.";
     formStatus.classList.add("is-success");
   });
 
-  /* ---------- 6. Navegación activa según scroll ---------- */
   const navLinks = $$(".nav__list .nav__link", $("#menu"));
   const sections = navLinks
     .map((link) => $(link.getAttribute("href")))
@@ -230,7 +208,6 @@
     window.scrollTo({ top: 0 });
   });
 
-  /* ---------- 8. Valores de color en el Design System ---------- */
   function renderColorValues() {
     const styles = getComputedStyle(document.documentElement);
     $$("[data-token]").forEach((el) => {
@@ -238,6 +215,5 @@
     });
   }
 
-  /* ---------- Año del footer ---------- */
   $("#year").textContent = new Date().getFullYear();
 })();
