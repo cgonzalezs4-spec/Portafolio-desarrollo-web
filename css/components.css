@@ -175,12 +175,16 @@
 .card__media {
   margin: 0;
   background: var(--color-surface-alt);
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1 / 1;
 }
 
 .card__media img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+}
+
+.card__media--cover img {
   object-fit: cover;
 }
 
