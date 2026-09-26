@@ -129,6 +129,7 @@
   const form = $("#contact-form");
   const formStatus = $("#form-status");
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let statusTimeout;
 
   const rules = {
     nombre: (value) => (value.trim().length < 2 ? "Escribe tu nombre (mínimo 2 caracteres)." : ""),
@@ -155,7 +156,9 @@
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
+    window.clearTimeout(statusTimeout);
     formStatus.className = "form__status";
+    formStatus.textContent = "";
 
     const fields = $$("input, textarea", form);
     const results = fields.map(validateField);
@@ -168,8 +171,12 @@
     }
 
     form.reset();
-    formStatus.textContent = "Mensaje validado. Gracias por escribir.";
+    formStatus.textContent = "¡Gracias por comunicarte conmigo! Pronto me pondré en contacto contigo.";
     formStatus.classList.add("is-success");
+    statusTimeout = window.setTimeout(() => {
+      formStatus.textContent = "";
+      formStatus.className = "form__status";
+    }, 5000);
   });
 
   const navLinks = $$(".nav__list .nav__link", $("#menu"));
