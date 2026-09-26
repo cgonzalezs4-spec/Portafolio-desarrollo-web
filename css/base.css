@@ -73,7 +73,6 @@ ul {
   outline-offset: 3px;
 }
 
-/* Utilidades de layout */
 .container {
   width: min(100% - 2rem, var(--container-max));
   margin-inline: auto;

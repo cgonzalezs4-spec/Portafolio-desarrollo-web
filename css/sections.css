@@ -1,8 +1,3 @@
-/* ==========================================================
-   sections.css — Layout propio de cada sección
-   ========================================================== */
-
-/* ---------- Inicio ---------- */
 .hero {
   padding-block: var(--space-2xl);
 }
@@ -33,7 +28,6 @@
   font-weight: var(--weight-bold);
 }
 
-/* Tarjeta de código: el elemento memorable del inicio */
 .code-card {
   overflow-x: auto;
   margin: 0;
@@ -69,7 +63,6 @@
 .code-card .tk-str { color: #ffd479; }
 .code-card .tk-kw { color: #c4b5ff; }
 
-/* ---------- Sobre mí ---------- */
 .about {
   display: grid;
   gap: var(--space-xl);
@@ -142,7 +135,6 @@
   font-size: var(--text-sm);
 }
 
-/* ---------- Grids ---------- */
 .grid {
   display: grid;
   gap: var(--space-md);
@@ -154,7 +146,6 @@
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
 }
 
-/* ---------- Contacto ---------- */
 .contact {
   display: grid;
   gap: var(--space-xl);
@@ -166,7 +157,6 @@
   gap: var(--space-sm);
 }
 
-/* ---------- Design System ---------- */
 .ds-block {
   margin-top: var(--space-lg);
 }
@@ -262,7 +252,6 @@
   overflow-x: auto;
 }
 
-/* Modificadores del Design System (cada uno apunta a un token real) */
 .swatch--primary { --swatch: var(--color-primary); }
 .swatch--secondary { --swatch: var(--color-secondary); }
 .swatch--accent { --swatch: var(--color-accent); }

@@ -1,9 +1,3 @@
-/* ==========================================================
-   components.css — Componentes reutilizables
-   Navbar · Botones · Badge · Card · Skill · Formulario · Modal
-   ========================================================== */
-
-/* ---------- Navbar ---------- */
 .site-header {
   position: sticky;
   top: 0;
@@ -67,7 +61,6 @@
   display: none;
 }
 
-/* ---------- Botones ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -134,7 +127,6 @@
   gap: var(--space-md);
 }
 
-/* ---------- Badge ---------- */
 .badge {
   display: inline-block;
   padding: var(--space-xs) var(--space-sm);
@@ -164,7 +156,6 @@
   gap: var(--space-sm);
 }
 
-/* ---------- Card de proyecto ---------- */
 .card {
   display: flex;
   flex-direction: column;
@@ -223,7 +214,6 @@
   display: none;
 }
 
-/* ---------- Filtros (chips) ---------- */
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -253,7 +243,6 @@
   color: var(--color-on-primary);
 }
 
-/* ---------- Skill ---------- */
 .skill {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -320,7 +309,6 @@
   font-size: var(--text-sm);
 }
 
-/* ---------- Formulario ---------- */
 .form {
   display: grid;
   gap: var(--space-md);
@@ -387,7 +375,6 @@ textarea.input {
 .form__status.is-success { color: var(--color-success); }
 .form__status.is-error { color: var(--color-error); }
 
-/* ---------- Modal ---------- */
 .modal {
   width: min(100% - 2rem, 40rem);
   padding: 0;
@@ -427,7 +414,6 @@ textarea.input {
   list-style: disc;
 }
 
-/* ---------- Botón volver arriba ---------- */
 .to-top {
   position: fixed;
   right: var(--space-md);
@@ -448,7 +434,6 @@ textarea.input {
   display: none;
 }
 
-/* ---------- Footer ---------- */
 .site-footer {
   padding-block: var(--space-lg);
   background: var(--color-surface);

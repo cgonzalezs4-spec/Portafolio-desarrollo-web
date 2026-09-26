@@ -1,15 +1,9 @@
-/* ==========================================================
-   variables.css — Design tokens (CSS Custom Properties)
-   Todo el sistema visual sale de aquí.
-   ========================================================== */
 :root {
-  /* Colores de marca */
   --color-primary: #3730d9;
   --color-primary-hover: #2a23b3;
   --color-secondary: #0b8f8c;
   --color-accent: #f2b705;
 
-  /* Colores de interfaz */
   --color-background: #f6f8fb;
   --color-surface: #ffffff;
   --color-surface-alt: #eaeef5;
@@ -22,7 +16,6 @@
   --color-code-bg: #101828;
   --color-code-text: #e6ebf5;
 
-  /* Tipografía */
   --font-heading: "Bricolage Grotesque", "Trebuchet MS", Arial, sans-serif;
   --font-primary: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
@@ -41,7 +34,6 @@
   --leading-body: 1.65;
   --leading-heading: 1.1;
 
-  /* Espaciado (escala) */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -49,25 +41,21 @@
   --space-xl: 3rem;
   --space-2xl: 5rem;
 
-  /* Bordes y radios */
   --border-width: 1px;
   --radius-sm: 0.375rem;
   --radius-md: 0.75rem;
   --radius-lg: 1.25rem;
   --radius-pill: 999px;
 
-  /* Sombras */
   --shadow-card: 0 4px 14px rgb(16 24 40 / 0.08);
   --shadow-raised: 0 12px 30px rgb(16 24 40 / 0.14);
 
-  /* Tamaños relevantes */
   --container-max: 68rem;
   --header-height: 4rem;
   --measure: 65ch;
   --transition: 0.2s ease;
 }
 
-/* Tema oscuro: solo se redefinen los tokens que cambian */
 [data-theme="dark"] {
   --color-primary: #8b86ff;
   --color-primary-hover: #a9a5ff;
